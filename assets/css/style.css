@@ -1,0 +1,289 @@
+/***************************General Style*************************************/
+@import url("https://fonts.googleapis.com/css?family=Boogaloo");
+
+* {
+  font-family: 'Boogaloo', cursive;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #232428 !important;
+}
+
+h1, h2 {
+  color: grey !important;
+  text-align: center;
+}
+
+.morecenter {
+  text-align: center;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: 1280px;
+  height: 720px;
+}
+
+p {
+  color: #FFFFFF;
+}
+
+/***************************Navbar code***************************************/
+nav {
+  background-color: #FF6016 !important;
+}
+
+.navtextstyle {
+  color: white;
+}
+/*****************************Test********************************************
+section { background: #ded9d6;
+               color: #3c8179;
+              margin: 0;
+             padding: 2.75em 0;
+         font-family: 'Playfair Display', serif;
+           font-size: 1.2em;
+         line-height: 1.4em;
+         text-indent: 18px;
+}
+
+section p { width: 715px; margin: 0 auto; margin-bottom: 8px; }
+p::first-letter { font-size: 1.8rem; font-weight: 500; margin-top: 10px; }
+
+.primary-nav:first-child:hover .subNav { display: block; }
+.subNav { display: none; }
+.subNav { display: none; z-index: 3; position: absolute; top: 40px; left: 0; transition: all 0.2s linear; } */
+
+
+/*****************************Timeline Code**********************************/
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+    color: grey;
+}
+
+    .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #eeeeee;
+        left: 50%;
+        margin-left: -1.5px;
+    }
+
+    .timeline > li {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+        .timeline > li:before,
+        .timeline > li:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline > li:after {
+            clear: both;
+        }
+
+        .timeline > li:before,
+        .timeline > li:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline > li:after {
+            clear: both;
+        }
+
+        .timeline > li > .timeline-panel {
+            width: 46%;
+            float: left;
+            border: 1px solid #d4d4d4;
+            border-radius: 2px;
+            padding: 20px;
+            position: relative;
+            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        }
+
+            .timeline > li > .timeline-panel:before {
+                position: absolute;
+                top: 26px;
+                right: -15px;
+                display: inline-block;
+                border-top: 15px solid transparent;
+                border-left: 15px solid #ccc;
+                border-right: 0 solid #ccc;
+                border-bottom: 15px solid transparent;
+                content: " ";
+            }
+
+            .timeline > li > .timeline-panel:after {
+                position: absolute;
+                top: 27px;
+                right: -14px;
+                display: inline-block;
+                border-top: 14px solid transparent;
+                border-left: 14px solid #fff;
+                border-right: 0 solid #fff;
+                border-bottom: 14px solid transparent;
+                content: " ";
+            }
+
+        .timeline > li > .timeline-badge {
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.4em;
+            text-align: center;
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            margin-left: -25px;
+            background-color: #999999;
+            z-index: 100;
+            border-top-right-radius: 50%;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        .timeline > li.timeline-inverted > .timeline-panel {
+            float: right;
+        }
+
+            .timeline > li.timeline-inverted > .timeline-panel:before {
+                border-left-width: 0;
+                border-right-width: 15px;
+                left: -15px;
+                right: auto;
+            }
+
+            .timeline > li.timeline-inverted > .timeline-panel:after {
+                border-left-width: 0;
+                border-right-width: 14px;
+                left: -14px;
+                right: auto;
+            }
+
+.timeline-badge.primary {
+    background-color: #FF6016 !important;
+}
+
+.timeline-badge.success {
+    background-color: #FF6016 !important;
+}
+
+.timeline-badge.warning {
+    background-color: #FF6016 !important;
+}
+
+.timeline-badge.danger {
+    background-color: #FF6016 !important;
+}
+
+.timeline-badge.info {
+    background-color: #FF6016 !important;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+    margin-bottom: 0;
+}
+
+    .timeline-body > p + p {
+        margin-top: 5px;
+    }
+
+@media (max-width: 767px) {
+    ul.timeline:before {
+        left: 40px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+
+    ul.timeline > li > .timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+
+        ul.timeline > li > .timeline-panel:before {
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+        }
+
+        ul.timeline > li > .timeline-panel:after {
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -14px;
+            right: auto;
+        }
+}
+
+/**************************Skillbars Code*************************************/
+.skillcontainer {
+  margin-top: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #db3a34;
+}
+
+.bar {
+  width: 90%;
+  height: 35px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  transition: all 2s linear;
+}
+
+.bar-1,
+.my-skills {
+  width: 80%;
+  margin: 10px auto 25px;
+}
+
+.bar-inner {
+  width: 0;
+  height: 35px;
+  line-height: 35px;
+  background: #db3a34;
+  border-radius: 5px 0 0 5px;
+}
+
+.bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 18px;
+}
