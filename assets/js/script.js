@@ -1,17 +1,30 @@
-//Effet scroll au click pour chaque section du CV
+//Effet scroll au clic pour chaque section du CV
 $(function() {
   var scrollToAnchor = function( id ) {
-    var elem = $("section[id='"+ id +"']"); // on crée une balise d'ancrage
-    if ( typeof elem.offset()  === "undefined" ) { // on verifie si l'élément existe
+    //Création de la balise d'ancrage
+    var elem = $("section[id='"+ id +"']");
+    //Vérification si l'élément existe
+    if ( typeof elem.offset()  === "undefined" ) {
 		elem = $("#"+id); }
-    if ( typeof elem.offset()  !== "undefined" ) { // si l'élément existe, on continue
+    //On continue si l'élément existe
+    if ( typeof elem.offset()  !== "undefined" ) {
       $('html, body').animate({
-              scrollTop: elem.offset().top }, 1500 );} // on défini un temps de défilement de page
+    //définition de la vitesse de défilement
+              scrollTop: elem.offset().top }, 1500 );}
   };
-  $("a").click(function( event ) { // on attache la fonction au click
-    if ( $(this).attr("href").match("#") ) { // on vérifie qu'il s'agit d'une ancre
+  //on associe la fonction au clic
+  $("a").click(function( event ) {
+    //on vérifie s'il s'agit d'une ancre
+    if ( $(this).attr("href").match("#") ) {
       event.preventDefault();
-      var href = $(this).attr('href').replace('#', '') // on scroll vers la cible
+      //activation du scroll
+      var href = $(this).attr('href').replace('#', '')
       scrollToAnchor( href ); }
   });
+});
+
+//NiceScroll pour une scrollbar custom raccord avec mon thème
+$(document).ready(function() {
+  $("html").niceScroll({
+cursorcolor:"#DD1C1A",background:"transparent",cursorwidth: 5,cursorborder: "0px solid transparent", cursorborderradius: "6px"});
 });
