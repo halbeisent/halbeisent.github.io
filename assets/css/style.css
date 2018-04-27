@@ -1,6 +1,6 @@
-/*BODY STYLE*/
+/*GENERAL STYLE*/
 body {
-  background-color: #011627;
+  background-color: #02182B;
 }
 
 h2 {
@@ -8,22 +8,30 @@ h2 {
   text-align: center;
 }
 
+/* NAVBAR STYLE */
+.bg-red {
+  background-color: #C81D25
+}
+
+/* SECTION A PROPOS DE MOI */
 #aboutme {
   color: #535984;
   text-align: center;
-  margin-bottom: 80px;
 }
 
+/* SECTION EXPERIENCE */
 #experience {
-  margin-bottom: 80px;
+  margin-top: 150px;
 }
 
-#skills .container-fluid {
-  padding: 10px 50px;
+/* SECTION COMPETENCES */
+#skillscontainer {
+  margin-top: 150px;
+  margin-bottom: 150px;
   text-align: center;
-  margin-bottom: 80px;
 }
 
+/* SECTION EN PLUS */
 #heressomethingmore {
   color: #535984;
   text-align: center;
@@ -32,6 +40,17 @@ h2 {
 #heressomethingmore img {
   height: 360px;
   width: 640px;
+}
+
+/* FOOTER STYLE */
+.bg-footer {
+  background-color: #C81D25;
+  color: #535984;
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
 }
 
 /*IFRAME SETTINGS*/
@@ -49,11 +68,6 @@ iframe, object, embed {
 /*CONTAINER-FLUID PADDING OVERRIDE*/
 .container-fluid {
   padding: 0;
-}
-
-/*BOOTSTRAP 4 NAVBAR STYLE*/
-.bg-darkred {
-  background-color: #DD1C1A;
 }
 
 /*RESPONSIVE TIMELINE STYLE*/
@@ -129,7 +143,7 @@ iframe, object, embed {
   width: 16px;
   height: 10px;
   position: absolute;
-  background: #DD1C1A;
+  background: #C81D25;
   z-index: 5;
   left: 0;
   right: 0;
@@ -140,7 +154,7 @@ iframe, object, embed {
 }
 
 .timeline .hexa:before {
-  border-bottom: 4px solid #DD1C1A;
+  border-bottom: 4px solid #C81D25;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -149,7 +163,7 @@ iframe, object, embed {
 .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid #DD1C1A;
+  border-top: 4px solid #C81D25;
   bottom: -4px;
 }
 
@@ -168,7 +182,7 @@ iframe, object, embed {
 .flag {
   position: relative;
   display: inline;
-  background: #DD1C1A;
+  background: #C81D25;
   color: white;
   font-weight: 600;
   z-index: 15;
@@ -187,7 +201,7 @@ iframe, object, embed {
   width: 0;
   margin-left: -8px;
   border: solid transparent;
-  border-bottom-color: #DD1C1A;
+  border-bottom-color: #C81D25;
   border-width: 8px;
 }
 
@@ -222,7 +236,7 @@ iframe, object, embed {
 }
 
 .time {
-  background: #DD1C1A;
+  background: #C81D25;
   display: inline-block;
   padding: 8px;
 }
@@ -301,7 +315,7 @@ iframe, object, embed {
     top: 50%;
     margin-top: -8px;
     border: solid transparent;
-    border-left-color: #DD1C1A;
+    border-left-color: #C81D25;
     border-width: 8px;
   }
 
@@ -309,7 +323,7 @@ iframe, object, embed {
     top: 50%;
     margin-top: -8px;
     border: solid transparent;
-    border-right-color: #DD1C1A;
+    border-right-color: #C81D25;
     border-width: 8px;
     left: -8px;
   }
@@ -360,18 +374,245 @@ iframe, object, embed {
 }
 
 /*SKILLS*/
-.chart {
+.skill {
+  color: #fff;
+  position: relative;
+  display: inline-flex;
+  margin: 2rem;
+  transition: all 200ms ease;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill .skill__img {
   position: relative;
   display: inline-block;
-  margin: 20px 10px;
-  color: #999;
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
+  width: 80px;
+  height: 80px;
+  max-width: 100px;
+  max-height: 100px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  overflow: hidden;
 }
-.chart canvas {
+
+.skill .skill__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 60%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.skill .skill__content {
+  padding: 1.1rem 0 0.5rem 3rem;
+}
+
+.skill .skill__content .skill__name {
+  text-align: left;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.skill .skill__content .skill__name #procent {
+  float: right;
+}
+
+.skill .skill__content .skill__progress {
+  position: relative;
+  width: 350px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #222;
+}
+
+@media (max-width: 630px) {
+  .skill {
+    margin: 2rem 0;
+  }
+
+  .skill .skill__img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .skill .skill__content {
+  padding: 0.5rem 0 0.8rem 1.5rem;
+}
+
+  .skill .skill__content .skill__progress {
+    width: 200px;
+  }
+}
+
+.skill .skill__content .skill__progress #progress {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+
+
+#html .skill__img {
+  border-top: 3px solid #E86F4D;
+  border-right: 3px solid #E55F39;
+  border-bottom: 3px solid #E34F26;
+  border-left: 3px solid #CF4823;
+}
+
+#html .skill__img img {
+  width: 40%;
+}
+
+#html #progress {
+  background-color: #E34F26;
+  transition: all 1000ms;
+}
+
+#html.active #progress {
+  width: 75%;
+}
+
+
+#js .skill__img {
+  border-top: 3px solid #fcfcab;
+  border-right: 3px solid #ffff84;
+  border-bottom: 3px solid #f4f458;
+  border-left: 3px solid #ffff00;
+}
+
+#js #progress {
+  background-color: #f4f458;
+  transition: all 850ms;
+}
+
+#js.active #progress {
+  width: 65%;
+}
+
+#jQuery .skill__img {
+  border-top: 3px solid #98def2;
+  border-right: 3px solid #67c6e0;
+  border-bottom: 3px solid #53c0dd;
+  border-left: 3px solid #2e88a0;
+}
+
+#jQuery #progress {
+  background-color: #53c0dd;
+  transition: all 350ms;
+}
+
+#jQuery.active #progress {
+  width: 65%;
+}
+
+
+#angularJS .skill__img {
+  border-top: 3px solid #E59C9C;
+  border-right: 3px solid #AF6464;
+  border-bottom: 3px solid #994646;
+  border-left: 3px solid #562727;
+}
+
+#angularJS #progress {
+  background-color: #994646;
+  transition: all 500ms;
+}
+
+#angularJS.active #progress {
+  width: 55%;
+}
+
+#windows .skill__img {
+  border-top: 3px solid #9CC4E5;
+  border-right: 3px solid #6497AF;
+  border-bottom: 3px solid #648EAF;
+  border-left: 3px solid #274056;
+}
+
+#windows #progress {
+  background-color: #648EAF;
+  transition: all 500ms;
+}
+
+#windows.active #progress {
+  width: 90%;
+}
+
+#macos .skill__img {
+  border-top: 3px solid #66AE2C;
+  border-right: 3px solid #CA2F36;
+  border-bottom: 3px solid #EA811F;
+  border-left: 3px solid #FCB930;
+}
+
+#macos #progress {
+  background-color: #872c70;
+  transition: all 500ms;
+}
+
+#macos.active #progress {
+  width: 85%;
+}
+
+#linux .skill__img {
+  border-top: 3px solid #E5D59C;
+  border-right: 3px solid #AFA264;
+  border-bottom: 3px solid #AFA264;
+  border-left: 3px solid #565127;
+}
+
+#linux #progress {
+  background-color: #FFCC00;
+  transition: all 500ms;
+}
+
+#linux.active #progress {
+  width: 70%;
+}
+
+#css .skill__img {
+  border-top: 3px solid #B5E1FC;
+  border-right: 3px solid #75B7D2;
+  border-bottom: 3px solid #66BCCC;
+  border-left: 3px solid #3C96C4;
+}
+
+#css #progress {
+  background-color: #66BCCC;
+  transition: all 600ms;
+}
+
+#css.active #progress {
+  width: 75%;
+}
+
+.skill__img, .skill__content .skill__name, .skill__content .skill__progress {
+  transition: all 500ms ease;
+}
+
+.skill.left .skill__img {
+  box-shadow: 5px 15px 7px 0px rgba(0,0,0,0.25);
+}
+.skill.left .skill__name {
+  text-shadow: -15px 10px 3px rgba(0, 0, 0, 0.25);
+}
+.skill.left .skill__progress {
+  box-shadow: -15px 15px 7px 0px rgba(0,0,0,0.25);
+}
+
+.skill.right .skill__img {
+  box-shadow: 15px 5px 7px 0px rgba(0,0,0,0.25);
+}
+.skill.right .skill__name {
+  text-shadow: 15px 10px 3px rgba(0, 0, 0, 0.25);
+}
+.skill.right .skill__progress {
+  box-shadow: 15px 15px 7px 0px rgba(0,0,0,0.25);
 }

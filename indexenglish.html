@@ -3,274 +3,385 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thibault HALBEISEN - Web resume</title>
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/fontawesome-all.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/jquery.easy-pie-chart.js"></script>
-  <script src="assets/js/jquery.nicescroll.min.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script>new WOW().init();</script>
+  <title>Thibault Halbeisen - Web resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome-all.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script> new WOW().init();</script>
 </head>
 <body>
-  <!--Section relative à ma navbar-->
   <div class="container-fluid">
     <article class="wow fadeInDown" data-wow-duration="2s">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-darkred">
-        <a class="navbar-brand" href="#">Thibault Halbeisen</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-red">
+        <a class="navbar-brand" href="#">Thibault HALBEISEN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aboutme">About me</a>
+              <a class="nav-link" href="aboutme"><i class="fas fa-question-circle"></i> About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
+              <a class="nav-link" href="experience"><i class="fas fa-briefcase"></i> Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="skills"><i class="fas fa-graduation-cap"></i> Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#hobbies">Hobbies</a>
+              <a class="nav-link" href="heressomethingmore"><i class="fas fa-plus-square"></i> More</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#heressomethingmore">Something more</a>
+              <a class="nav-link" href="https://github.com/halbeisent" target="_blank"><i class="fab fa-github-square"></i> GitHub</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/halbeisent" target="_blank">Github <i class="fab fa-github-square"></i></a>
+              <a class="nav-link" href="https://www.linkedin.com/in/thibault-halbeisen-7443b4b6/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/thibault-halbeisen-7443b4b6/" target="_blank">Linkedin <i class="fab fa-linkedin"></i></a>
+              <a class="nav-link" href="http://www.viadeo.com/p/002h2me93vainak" target="_blank"><i class="fab fa-viadeo-square"></i>Viadeo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.viadeo.com/p/002h2me93vainak" target="_blank">Viadeo <i class="fab fa-viadeo-square"></i></a>
+              <a class="nav-link" href="mailto:&#100;&#101;&#118;&#064;&#104;&#097;&#108;&#098;&#101;&#105;&#115;&#101;&#110;&#046;&#102;&#114;?subject=contactFR"><i class="fas fa-at"></i> Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mailto:dev@halbeisen.fr?subject=ContactEN">Mail <i class="fas fa-at"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Version Française <i class="fas fa-language"></i></a>
+              <a class="nav-link" href="index.html"><i class="fas fa-language"></i> Version Française</a>
             </li>
           </ul>
         </div>
       </nav>
     </article>
     <section id="aboutme">
-      <h2>Some words on me</h2>
-      <article class="wow fadeIn" data-wow-duration="3s">
-        <p>Former IT support technician, soon to be web developer, 24 years old, owner of a car driving license.</p>
-      </article>
+      <h2>About me</h2>
+      <p>Former IT support technician, soon to be web developer. 24 years old, holder of a car driving license</p>
     </section>
-    <!--RESPONSIVE TIMELINE CODE-->
     <section id="experience">
-      <h2>My experience</h2>
-      <ul class="timeline">
-        <!-- Item 1 -->
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+      <h2>My Experience</h2>
+        <ul class="timeline">
+          <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInRight" data-wow-duration="2s">
+                  <span class ="flag">E2N Pro</span>
+                  <span class="time-wrapper"><span class="time">01/03/2018 - 31/08/2018</span></span>
+                </article>
+              </div>
               <article class="wow bounceInRight" data-wow-duration="2s">
-                <span class ="flag">E2N Pro</span>
-                <span class="time-wrapper"><span class="time">01/03/2018 - 31/08/2018</span></span>
+                <div class="desc">Student of the first promotion.</div>
               </article>
             </div>
-            <article class="wow bounceInRight" data-wow-duration="2s">
-              <div class="desc">Student of the first promotion.</div>
-            </article>
-          </div>
-        </li>
-        <!-- Item 2 -->
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+          </li>
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInLeft" data-wow-duration="2s">
+                  <span class="flag">Agesys</span>
+                  <span class="time-wrapper"><span class="time">02/09/2015 - 30/11/2017</span></span>
+                </article>
+              </div>
               <article class="wow bounceInLeft" data-wow-duration="2s">
-                <span class="flag">Agesys</span>
-                <span class="time-wrapper"><span class="time">02/09/2015 - 30/11/2017</span></span>
+                <div class="desc">IT support technician.</div>
               </article>
             </div>
-            <article class="wow bounceInLeft" data-wow-duration="2s">
-              <div class="desc">IT support technician.</div>
-            </article>
-          </div>
-        </li>
-        <!-- Item 3 -->
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+          </li>
+          <!-- Item 3 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInRight" data-wow-duration="2s">
+                  <span class="flag">Agesys</span>
+                  <span class="time-wrapper"><span class="time">02/09/2013 - 31/08/2015</span></span>
+                </article>
+              </div>
               <article class="wow bounceInRight" data-wow-duration="2s">
-                <span class="flag">Agesys</span>
-                <span class="time-wrapper"><span class="time">02/09/2013 - 31/08/2015</span></span>
+                <div class="desc">IT support technician, this internship was required to validate my BTS.</div>
               </article>
             </div>
-            <article class="wow bounceInRight" data-wow-duration="2s">
-              <div class="desc">IT support technician (required to validate my BTS diploma).</div>
-            </article>
-          </div>
-        </li>
-        <!-- Item 4 -->
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+          </li>
+          <!-- Item 4 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInLeft" data-wow-duration="2s">
+                  <span class="flag">Promeo</span>
+                  <span class="time-wrapper"><span class="time">30/08/2013 30/07/2015</span></span>
+                </article>
+              </div>
               <article class="wow bounceInLeft" data-wow-duration="2s">
-                <span class="flag">Promeo Fomation</span>
-                <span class="time-wrapper"><span class="time">30/08/2013 30/07/2015</span></span>
+                <div class="desc">I obtained successfully my BTS Services Informatiques aux Organisations, option Solutions d'infrastructures Systèmes et Réseaux.</div>
               </article>
             </div>
-            <article class="wow bounceInLeft" data-wow-duration="2s">
-              <div class="desc">I obtained successfully my diploma: BTS Services Informatiques aux Organisations with the specialization Systèmes d'Infrastructures, et Services Réseaux.</div>
-            </article>
-          </div>
-        </li>
-        <!-- Item 5 -->
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+          </li>
+          <!-- Item 5 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInRight" data-wow-duration="2s">
+                  <span class="flag">Lycée Mireille Grenet</span>
+                  <span class="time-wrapper"><span class="time">2010 - 2013</span></span>
+                </article>
+              </div>
               <article class="wow bounceInRight" data-wow-duration="2s">
-                <span class="flag">Lycée Mireille Grenet</span>
-                <span class="time-wrapper"><span class="time">2010 - 2013</span></span>
+                <div class="desc">I obtained successfully my Bac Pro Systèmes Electroniques et Numériques.</div>
               </article>
             </div>
-            <article class="wow bounceInRight" data-wow-duration="2s">
-              <div class="desc">I obtained successfully my Bac Pro Systèmes Electroniques et Numériques.</div>
-            </article>
-          </div>
-        </li>
-        <!-- Item 6 -->
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+          </li>
+          <!-- Item 6 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInLeft" data-wow-duration="2s">
+                  <span class="flag">Espace InfoCom</span>
+                  <span class="time-wrapper"><span class="time">2013</span></span>
+                </article>
+              </div>
               <article class="wow bounceInLeft" data-wow-duration="2s">
-                <span class="flag">Espace InfoCom</span>
-                <span class="time-wrapper"><span class="time">2013</span></span>
+                <div class="desc">Internship required to validate my Bac Pro, i worked in a company that sells and fixes photocopiers.</div>
               </article>
             </div>
-            <article class="wow bounceInLeft" data-wow-duration="2s">
-              <div class="desc">Internship required to validate my Bac Pro diploma, i worked in a company selling and fixing photocopiers.</div>
-            </article>
-          </div>
-        </li>
-        <!-- Item 7 -->
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+          </li>
+          <!-- Item 7 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInRight" data-wow-duration="2s">
+                  <span class="flag">Eric Charlier Electromenager</span>
+                  <span class="time-wrapper"><span class="time">2012</span></span>
+                </article>
+              </div>
               <article class="wow bounceInRight" data-wow-duration="2s">
-                <span class="flag">Eric Charlier Electromenager</span>
-                <span class="time-wrapper"><span class="time">2012</span></span>
+                <div class="desc">Internship required to validate my Bac Pro, i worked with an auto-entrepreneur who repairs all sorts of appliances.</div>
               </article>
             </div>
-            <article class="wow bounceInRight" data-wow-duration="2s">
-              <div class="desc">Internship (required to validate my Bac Pro diploma), i participated in the fixing of several appliances (Hi-Fi, kitchen...).</div>
-            </article>
-          </div>
-        </li>
-        <!-- Item 8 -->
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+          </li>
+          <!-- Item 8 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInLeft" data-wow-duration="2s">
+                  <span class="flag">SNCF Amiens</span>
+                  <span class="time-wrapper"><span class="time">2012</span></span>
+                </article>
+              </div>
               <article class="wow bounceInLeft" data-wow-duration="2s">
-                <span class="flag">SNCF Amiens</span>
-                <span class="time-wrapper"><span class="time">2012</span></span>
+                <div class="desc">Internship required to validate my Bac Pro, i worked in the Radio Intervention and Repair Center located in Amiens, this center is responsible for maintenance and repairs of radio and phone equipments next to the railroads.</div>
               </article>
             </div>
-            <article class="wow bounceInLeft" data-wow-duration="2s">
-              <div class="desc">Internship (required to validate my Bac Pro diploma), i participated in the maintenance and fixing of railroad phones and radio equipment.</div>
-            </article>
-          </div>
-        </li>
-        <!-- Item 9 -->
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+          </li>
+          <!-- Item 9 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInRight" data-wow-duration="2s">
+                  <span class="flag">DLNet Interactive</span>
+                  <span class="time-wrapper"><span class="time">2011</span></span>
+                </article>
+              </div>
               <article class="wow bounceInRight" data-wow-duration="2s">
-                <span class="flag">DLNet Interactive</span>
-                <span class="time-wrapper"><span class="time">2011</span></span>
+                <div class="desc">Internship required to validate my Bac Pro, i worked in a company that develops websites and fixes computers.</div>
               </article>
             </div>
-            <article class="wow bounceInRight" data-wow-duration="2s">
-              <div class="desc">Internship required to validate my Bac Pro Diploma, i worked in a Computer selling and fixing company.</div>
-            </article>
-          </div>
-        </li>
-        <!-- Item 10 -->
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+          </li>
+          <!-- Item 10 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInLeft" data-wow-duration="2s">
+                  <span class="flag">Volkswagen Group France</span>
+                  <span class="time-wrapper"><span class="time">2011</span></span>
+                </article>
+              </div>
               <article class="wow bounceInLeft" data-wow-duration="2s">
-                <span class="flag">Volkswagen Group France</span>
-                <span class="time-wrapper"><span class="time">2011</span></span>
+                <div class="desc">Internship required to validate my Bac Pro, i worked mainly with the warehouse maintenance team which repairs handheld and forklifts barcode scanning devices, i also assisted the Windows XP to Windows 7 migration team</div>
               </article>
             </div>
-            <article class="wow bounceInLeft" data-wow-duration="2s">
-              <div class="desc">Internship required to validate my Bac Pro diploma, i worked in the spareparts warehouse fixing the barcode scanning devices and assisted the person in charge of the Windows 7 migration.</div>
-            </article>
-          </div>
-        </li>
-        <!-- Item 11 -->
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
+          </li>
+          <!-- Item 11 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <article class="wow bounceInRight" data-wow-duration="2s">
+                  <span class="flag">DLNet Interactive</span>
+                  <span class="time-wrapper"><span class="time">2010</span></span>
+                </article>
+              </div>
               <article class="wow bounceInRight" data-wow-duration="2s">
-                <span class="flag">DLNet Interactive</span>
-                <span class="time-wrapper"><span class="time">2010</span></span>
+                <div class="desc">Internship required to validate my Bac Pro, i worked in a company that develops websites and fixes computers</div>
               </article>
             </div>
-            <article class="wow bounceInRight" data-wow-duration="2s">
-              <div class="desc">Internship required to validate my Bac Pro Diploma, i worked in a Computer selling and fixing company.</div>
-            </article>
+          </li>
+        </ul>
+      </section>
+      <section id="skills">
+        <div id="skillscontainer">
+        <h2>Acquired Skills</h2>
+        <article class="wow fadeIn" data-wow-duration="3s">
+          <div class="skill active" id="html">
+            <div class="skill__img">
+              <img src="http://www.growingwiththeweb.com/images/general/html5.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                HTML
+                <span id="procent">75 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
           </div>
-        </li>
-      </ul>
+          <div class="skill active" id="css">
+            <div class="skill__img">
+              <img src="http://www.growingwiththeweb.com/images/general/css3.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                CSS
+                <span id="procent">75 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="js">
+            <div class="skill__img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Badge_js-strict.svg" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                Javascript
+                <span id="procent">65 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="jQuery">
+            <div class="skill__img">
+              <img src="assets/img/jQuery_Badge.svg" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                jQuery
+                <span id="procent">65 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="angularJS">
+            <div class="skill__img">
+              <img src="assets/img/angularjsbadge.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                angularJS
+                <span id="procent">55 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="windows">
+            <div class="skill__img">
+              <img src="assets/img/winbadge.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                Microsoft Windows
+                <span id="procent">90 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="windows">
+            <div class="skill__img">
+              <img src="assets/img/winbadge.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                Microsoft Windows
+                <span id="procent">90 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="macos">
+            <div class="skill__img">
+              <img src="assets/img/applelogo.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                Apple macOS
+                <span id="procent">85 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="linux">
+            <div class="skill__img">
+              <img src="assets/img/linuxbadge.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                Linux
+                <span id="procent">70 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
-    <section id="skills">
-      <h2>Acquired Skills</h2>
+    <section id="heressomethingmore">
+      <h2>There's something more</h2>
       <article class="wow fadeIn" data-wow-duration="3s">
-        <div class="container-fluid">
-          <div class="chart" data-percent="95">Windows</div>
-          <div class="chart" data-percent="80">macOS</div>
-          <div class="chart" data-percent="90">Linux</div>
-          <div class="chart" data-percent="70">Réseau</div>
-          <div class="chart" data-percent="75">HTML</div>
-          <div class="chart" data-percent="70">CSS</div>
-          <div class="chart" data-percent="65">javascript</div>
-          <div class="chart" data-percent="70">bootstrap</div>
-          <div class="chart" data-percent="65">jquery</div>
-          <div class="chart" data-percent="60">angularjs</div>
+        <p>Short appearance in the TV broadcast 24H Pujadas in a report on absenteeism at work.My former company talks about it's solutions to make it's employees more happy at work  The reports lasts from 53:31 to 56:53. I can be seen at the timecode: 56:22. It aired on the 24/11/2017</p>
+        <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+          <img src="assets/img/playbtn.svg" class="img-fluid" style="cursor:pointer" alt="Lire la vidéo"/>
+        </div>
+        <div style="display:none">
+          <iframe src="https://www.tf1.fr/embedframe/598781chuPP3r13494293" frameborder="0" scrolling="no"></iframe>
         </div>
       </article>
     </section>
-    <section id="heressomethingmore">
-      <h2>Here's something more</h2>
-      <article class="wow fadeIn" data-wow-duration="3s">
-        <p>Short appearance in the TV broadcast called 24H Pujadas in a report on absenteeism at work . The video on my former company lasts from 53:31 to 56:53. You can find me at the timecode: 56:22.
-          This broadcast aired on 24/11/2017</p>
-          <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-            <img src="assets/img/playbtn.svg" style="cursor:pointer" alt="Lire la vidéo"/>
-          </div>
-          <div style="display:none">
-            <iframe src="https://www.tf1.fr/embedframe/598781chuPP3r13494293" frameborder="0" scrolling="no"></iframe>
-          </div>
-        </article>
-      </section>
-    </div>
-  </body>
-  </html>
+    <footer class="footer bg-footer">
+      <span class="text-muted">Copyright (c) 2018 Thibault Halbeisen All Rights Reserved.</span>
+    </footer>
+  </div>
+  <script src="assets/js/script.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,76 +1,68 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thibault HALBEISEN - CV Numérique</title>
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <title>Thibault Halbeisen - CV Numérique</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="assets/css/fontawesome-all.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/jquery.easy-pie-chart.js"></script>
-  <script src="assets/js/jquery.nicescroll.min.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script>new WOW().init();</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script> new WOW().init();</script>
 </head>
 <body>
-  <!--Section relative à ma navbar-->
   <div class="container-fluid">
     <article class="wow fadeInDown" data-wow-duration="2s">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-darkred">
-        <a class="navbar-brand" href="#">Thibault Halbeisen</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-red">
+        <a class="navbar-brand" href="#">Thibault HALBEISEN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#"><i class="fas fa-home"></i> Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aboutme">A propos</a>
+              <a class="nav-link" href="aboutme"><i class="fas fa-question-circle"></i> A propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experience">Expérience</a>
+              <a class="nav-link" href="experience"><i class="fas fa-briefcase"></i> Expérience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Compétences</a>
+              <a class="nav-link" href="skills"><i class="fas fa-graduation-cap"></i> Compétences</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#hobbies">Hobbies</a>
+              <a class="nav-link" href="heressomethingmore"><i class="fas fa-plus-square"></i> En plus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#heressomethingmore">En plus</a>
+              <a class="nav-link" href="https://github.com/halbeisent" target="_blank"><i class="fab fa-github-square"></i> GitHub</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/halbeisent" target="_blank">Github <i class="fab fa-github-square"></i></a>
+              <a class="nav-link" href="https://www.linkedin.com/in/thibault-halbeisen-7443b4b6/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/thibault-halbeisen-7443b4b6/" target="_blank">Linkedin <i class="fab fa-linkedin"></i></a>
+              <a class="nav-link" href="http://www.viadeo.com/p/002h2me93vainak" target="_blank"><i class="fab fa-viadeo-square"></i>Viadeo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.viadeo.com/p/002h2me93vainak" target="_blank">Viadeo <i class="fab fa-viadeo-square"></i></a>
+              <a class="nav-link" href="mailto:&#100;&#101;&#118;&#064;&#104;&#097;&#108;&#098;&#101;&#105;&#115;&#101;&#110;&#046;&#102;&#114;?subject=contactFR"><i class="fas fa-at"></i> Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mailto:dev@halbeisen.fr?subject=ContactFR">Mail <i class="fas fa-at"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="indexenglish.html">English Version <i class="fas fa-language"></i></a>
+              <a class="nav-link" href="indexenglish.html"><i class="fas fa-language"></i> English Version</a>
             </li>
           </ul>
         </div>
       </nav>
     </article>
     <section id="aboutme">
-      <h2>Quelques mots sur moi</h2>
-      <article class="wow fadeIn" data-wow-duration="3s">
-        <p>Ancien technicien d'assistance utilisateur, futur développeur web, 24 ans, détenteur du permis B.</p>
-      </article>
+      <h2>A propos de moi</h2>
+      <p>Ancien technicien d'assistance utilisateur, futur développeur web, 24 ans, détenteur du permis B.</p>
     </section>
-    <!--RESPONSIVE TIMELINE CODE-->
     <section id="experience">
       <h2>Mon expérience</h2>
       <ul class="timeline">
@@ -125,7 +117,7 @@
             <div class="flag-wrapper">
               <span class="hexa"></span>
               <article class="wow bounceInLeft" data-wow-duration="2s">
-                <span class="flag">Promeo Fomation</span>
+                <span class="flag">Promeo</span>
                 <span class="time-wrapper"><span class="time">30/08/2013 30/07/2015</span></span>
               </article>
             </div>
@@ -242,35 +234,156 @@
       </ul>
     </section>
     <section id="skills">
-      <h2>Compétences Acquises</h2>
-      <article class="wow fadeIn" data-wow-duration="3s">
-        <div class="container-fluid">
-          <div class="chart" data-percent="95">Windows</div>
-          <div class="chart" data-percent="80">macOS</div>
-          <div class="chart" data-percent="90">Linux</div>
-          <div class="chart" data-percent="70">Réseau</div>
-          <div class="chart" data-percent="75">HTML</div>
-          <div class="chart" data-percent="70">CSS</div>
-          <div class="chart" data-percent="65">javascript</div>
-          <div class="chart" data-percent="70">bootstrap</div>
-          <div class="chart" data-percent="65">jquery</div>
-          <div class="chart" data-percent="60">angularjs</div>
-        </div>
-      </article>
+      <div id="skillscontainer">
+        <h2>Compétences Acquises</h2>
+        <article class="wow fadeIn" data-wow-duration="3s">
+          <div class="skill active" id="html">
+            <div class="skill__img">
+              <img src="http://www.growingwiththeweb.com/images/general/html5.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                HTML
+                <span id="procent">75 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="css">
+            <div class="skill__img">
+              <img src="http://www.growingwiththeweb.com/images/general/css3.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                CSS
+                <span id="procent">75 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="js">
+            <div class="skill__img">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Badge_js-strict.svg" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                Javascript
+                <span id="procent">65 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="jQuery">
+            <div class="skill__img">
+              <img src="assets/img/jQuery_Badge.svg" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                jQuery
+                <span id="procent">65 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="angularJS">
+            <div class="skill__img">
+              <img src="assets/img/angularjsbadge.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                angularJS
+                <span id="procent">55 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="windows">
+            <div class="skill__img">
+              <img src="assets/img/winbadge.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                Microsoft Windows
+                <span id="procent">90 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div><div class="skill active" id="windows">
+            <div class="skill__img">
+              <img src="assets/img/winbadge.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                Microsoft Windows
+                <span id="procent">90 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="macos">
+            <div class="skill__img">
+              <img src="assets/img/applelogo.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                Apple macOS
+                <span id="procent">85 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+          <div class="skill active" id="linux">
+            <div class="skill__img">
+              <img src="assets/img/linuxbadge.png" />
+            </div>
+            <div class="skill__content">
+              <h2 class="skill__name">
+                Linux
+                <span id="procent">70 %</span>
+              </h2>
+              <div class="skill__progress">
+                <span id="progress"></span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
     <section id="heressomethingmore">
       <h2>En plus</h2>
       <article class="wow fadeIn" data-wow-duration="3s">
-        <p>Courte apparition dans 24H Pujadas dans un reportage sur l'absentéisme au travail. Le reportage dure de 53:31 à 56:53. Je me trouve au timecode: 56:22.
-          Diffusé le 24/11/2017</p>
-          <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-            <img src="assets/img/playbtn.svg" style="cursor:pointer" alt="Lire la vidéo"/>
-          </div>
-          <div style="display:none">
-            <iframe src="https://www.tf1.fr/embedframe/598781chuPP3r13494293" frameborder="0" scrolling="no"></iframe>
-          </div>
-        </article>
-      </section>
-    </div>
-  </body>
-  </html>
+        <p>Courte apparition dans 24H Pujadas dans un reportage sur l'absentéisme au travail. Le reportage dure de 53:31 à 56:53. Je me trouve au timecode: 56:22. Diffusé le 24/11/2017</p>
+        <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+          <img src="assets/img/playbtn.svg" class="img-fluid" style="cursor:pointer" alt="Lire la vidéo"/>
+        </div>
+        <div style="display:none">
+          <iframe src="https://www.tf1.fr/embedframe/598781chuPP3r13494293" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </article>
+    </section>
+    <footer class="footer bg-footer">
+      <div class="container">
+        <span class="text-muted">Copyright (c) 2018 Thibault Halbeisen All Rights Reserved.</span>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/script.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
