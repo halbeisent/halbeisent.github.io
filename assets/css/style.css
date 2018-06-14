@@ -1,14 +1,36 @@
 /* General Style */
 .indicator-item.active {
-  background-color: #F44336 !important;
+  background-color: #4A148C !important;
+}
+
+.nav-wrapper {
+  background-color: #4A148C;
+}
+
+.page-footer {
+  background-color: #4A148C !important;
 }
 
 .brand-logo {
   font-size: 1.2rem !important;
 }
 
+.projectDesc {
+  background-color: #FFFFFF;
+}
+
 #sidenav-overlay {
 display: none;
+}
+
+/*Centrage des titres*/
+#mesInterets, #mesProjets, #mesCompetences, #monParcours, #aPropos {
+  text-align: center;
+}
+
+/*Style du footer*/
+.purpleClass {
+  background-color: #4a148c !important;
 }
 
 /* Timeline en Materialize */
