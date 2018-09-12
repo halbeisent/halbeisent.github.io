@@ -238,7 +238,7 @@ display: none;
 }
 
 #html.active #progress {
-  width: 80%;
+  width: 100%;
 }
 
 
@@ -255,7 +255,7 @@ display: none;
 }
 
 #js.active #progress {
-  width: 60%;
+  width: 80%;
 }
 
 #jQuery .skill__img {
@@ -271,7 +271,7 @@ display: none;
 }
 
 #jQuery.active #progress {
-  width: 60%;
+  width: 80%;
 }
 
 
@@ -304,7 +304,7 @@ display: none;
 }
 
 #windows.active #progress {
-  width: 80%;
+  width: 100%;
 }
 
 #macos .skill__img {
@@ -333,6 +333,38 @@ display: none;
 #linux #progress {
   background-color: #FFCC00;
   transition: all 500ms;
+}
+
+#php .skill__img {
+    border-top: 3px solid #5CE8E8;
+    border-right: 3px solid #52CECE;
+    border-bottom: 3px solid #52CECE;
+    border-left: 3px solid #42A5A5;
+}
+
+#php #progress {
+    background-color: #54D3D3;
+    transition: all 500ms;
+}
+
+#php.active #progress {
+    width: 80%;
+}
+
+#mySQL .skill__img {
+    border-top: 3px solid #4880DB;
+    border-right: 3px solid #4277CE;
+    border-bottom: 3px solid #4277CE;
+    border-left: 3px solid #22457C;
+}
+
+#mySQL #progress {
+    background-color: #3765AF;
+    transition: all 500ms;
+}
+
+#mySQL.active #progress {
+    width: 80%;
 }
 
 #linux.active #progress {
