@@ -24,7 +24,7 @@ display: none;
 }
 
 /*Centrage des titres*/
-#mesInterets, #mesProjets, #mesCompetences, #monParcours, #aPropos {
+#mesInterets, #mesProjets, #mesCompetences, #monParcours, #aPropos, #aboutMe {
   text-align: center;
 }
 
