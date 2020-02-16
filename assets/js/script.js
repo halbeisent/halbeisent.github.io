@@ -1,29 +1,12 @@
-//Effet scroll jusque chaque section du cv
-$(function () {
-    var scrollToAnchor = function (id) {
-        var elem = $("section[id='" + id + "']");
-        if (typeof elem.offset() === "undefined") {
-            elem = $("#" + id);
-        }
-        if (typeof elem.offset() !== "undefined") {
-            $('html, body').animate({
-                scrollTop: elem.offset().top}, 1500);
-        }
-    };
-    $("a").click(function (event) {
-        if ($(this).attr("href").match("#")) {
-            event.preventDefault();
-            var href = $(this).attr('href').replace('#', '')
-            scrollToAnchor(href);
-        }
-    });
-});
-
-// Initialisation de Materialize
-$(document).ready(function () {
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
-    $('.collapsible').collapsible();
-    $('.slider').slider();
-    // Initialisation de nicescroll
-});
+document.onscroll = function moveTitles(){
+    let moveX = ((4 * window.scrollX) / 570) + 40;
+    let moveY = window.scrollY / 10;
+    document.getElementById('name').style.backgroundPosition = `${moveX}%${moveY}%`;
+    
+    let navbar = document.getElementById('navbar');
+    if(window.scrollY >= 300){
+        navbar.classList.add('fixed-top');
+    } else {
+        navbar.classList.remove('fixed-top');
+    }
+}

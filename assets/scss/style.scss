@@ -1,0 +1,66 @@
+@import '_timeline.scss';
+body{
+  background-color: black;
+  color: whitesmoke;
+}
+
+section{
+  padding-top: 20px;
+}
+
+a:not(.nav-link){
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+#navbar{
+  background-color: black;
+  .navbar-brand{
+    text-decoration: none;
+  }
+}
+
+#banner{
+  background-image: url("../img/milky-way-banner.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 300px;
+  h1{
+    color: whitesmoke;
+    margin-top: 10%;
+    text-align: center;
+  }
+}
+
+#name{
+  background: url('../img/milky-way-title-background.jpg') repeat;
+  background-clip: text;
+  //Nécessaire pour que le titre apparaisse au chargement de la page
+  background-position: 40% 50%;
+  color: transparent;
+  font-size: 3rem;
+  margin : 5%;
+  text-align: center;
+}
+
+.sectionTitle{
+  align-items: center;
+  color: whitesmoke;
+  display: flex;
+  margin: 7%;
+  &:before, &:after{
+    border-bottom: 1px solid whitesmoke;
+    content: '';
+    flex: 1;
+    margin: 0 40px;
+  }
+}
+
+.sectionSubTitle{
+  border-bottom: 1px solid whitesmoke;
+  color: whitesmoke;
+  margin: 3%;
+  padding-bottom: 1%;
+}
